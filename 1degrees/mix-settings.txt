@@ -1,0 +1,5 @@
+clock/ticker 1.36911;
+globesounds 0.0628211;
+globebeating-sub 0.220471;
+typernode 0.773745;
+pixel-printing 0.10865;
