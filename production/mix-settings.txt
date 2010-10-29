@@ -1,5 +1,6 @@
+60framerotate 0.674709;
+stretch 0.390113;
 2secrotate 0.381309;
 zoompopup 0.153015;
 latitudetinks 0.146187;
-rotatemap 0.408336;
-clock/ticker 0.575071;
+clock/ticker 1.16692;
