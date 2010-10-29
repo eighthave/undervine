@@ -1,0 +1,3 @@
+winepopclock 1.5;
+rotatemap 0.264643;
+clock/ticker 1.36911;
