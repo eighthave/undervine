@@ -1,3 +1,6 @@
-latitudetinks 0.264643;
+2secrotate 0.437279;
+zoompopup 0.153015;
+countrypopup 0.0826168;
+latitudetinks 0.146187;
 rotatemap 0.408336;
 clock/ticker 1.36911;
