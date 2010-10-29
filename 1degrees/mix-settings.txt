@@ -1,2 +1,3 @@
-rotatemap 0.264643;
+latitudetinks 0.264643;
+rotatemap 0.408336;
 clock/ticker 1.36911;
