@@ -1,6 +1,6 @@
-2secrotate 0.437279;
+60framerotate 1.5;
 zoompopup 0.153015;
 countrypopup 0.0826168;
 latitudetinks 0.146187;
-rotatemap 0.408336;
+30framerotate 1.5;
 clock/ticker 1.36911;
