@@ -1,4 +1,4 @@
-#N canvas 251 310 472 401 10;
+#N canvas 292 320 472 401 10;
 #X declare -path ..;
 #X obj 337 24 pddp/dsp;
 #X obj 225 7 ../mix-settings;
@@ -98,7 +98,7 @@
 #X restore 58 163 pd zoompopup;
 #X obj 236 120 ../tn-hsl zoompopup;
 #X obj 236 143 ../tn-hsl 2secrotate;
-#X obj 33 327 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 33 327 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #N canvas 0 22 445 336 record 0;
 #X obj 127 21 inlet;
@@ -134,7 +134,7 @@
 #X connect 8 0 9 0;
 #X connect 9 0 6 0;
 #X restore 302 158 pd generate filename;
-#X obj 129 60 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 129 60 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X msg 309 137 bang;
 #X obj 165 208 inlet~;
@@ -157,28 +157,41 @@
 #X obj 30 25 framesync/frameclock 2461;
 #X obj 34 294 framesync/fsrecordctrl 2461;
 #X obj 69 99 clock/ticker 1181 2175 26;
-#N canvas 104 315 625 360 stretch 0;
+#N canvas 585 345 625 360 stretch 0;
 #X obj 88 7 inlet;
-#X obj 320 97 soundfiler;
-#X obj 320 49 loadbang;
-#X obj 62 236 *~;
-#X obj 42 267 throw~ left;
-#X obj 122 267 throw~ right;
-#X obj 319 29 table stretch;
-#X msg 320 74 read -resize stretch.wav stretch;
-#X obj 77 212 receive stretch;
-#X text 328 144 31 frames before?;
-#X obj 33 123 framesync/fstabplay~ stretch 1168;
-#X obj 43 143 framesync/fstabplay~ stretch 1254;
-#X obj 53 163 framesync/fstabplay~ stretch 1410;
-#X connect 2 0 7 0;
+#X obj 320 207 soundfiler;
+#X obj 320 119 loadbang;
+#X obj 52 272 *~;
+#X obj 32 303 throw~ left;
+#X obj 112 303 throw~ right;
+#X obj 67 248 receive stretch;
+#X obj 319 29 table stretch1;
+#X obj 319 49 table stretch2;
+#X obj 319 69 table stretch3;
+#X msg 320 144 read -resize stretch1.wav stretch1;
+#X msg 340 184 read -resize stretch3.wav stretch3;
+#X msg 330 164 read -resize stretch2.wav stretch2;
+#X obj 49 140 framesync/fstabplay~ stretch3 1423;
+#X obj 39 121 framesync/fstabplay~ stretch2 1261;
+#X obj 29 101 framesync/fstabplay~ stretch1 1151;
+#X obj 58 164 framesync/fstabplay~ tink 1197;
+#X obj 68 184 framesync/fstabplay~ tink 1284;
+#X obj 78 203 framesync/fstabplay~ tink 1440;
+#X connect 2 0 10 0;
+#X connect 2 0 12 0;
+#X connect 2 0 11 0;
 #X connect 3 0 4 0;
 #X connect 3 0 5 0;
-#X connect 7 0 1 0;
-#X connect 8 0 3 1;
-#X connect 10 0 3 0;
-#X connect 11 0 3 0;
-#X connect 12 0 3 0;
+#X connect 6 0 3 1;
+#X connect 10 0 1 0;
+#X connect 11 0 1 0;
+#X connect 12 0 1 0;
+#X connect 13 0 3 0;
+#X connect 14 0 3 0;
+#X connect 15 0 3 0;
+#X connect 16 0 3 0;
+#X connect 17 0 3 0;
+#X connect 18 0 3 0;
 #X restore 49 183 pd stretch;
 #X obj 236 166 ../tn-hsl stretch;
 #N canvas 180 321 606 416 60framerotate 0;
