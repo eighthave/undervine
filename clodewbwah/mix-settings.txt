@@ -1,3 +1,4 @@
+60framerotate 0.847719;
 winenames 0.501464;
 30framerotate 0.994597;
-clock/ticker 0.659482;
+clock/ticker 0.972151;
