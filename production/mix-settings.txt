@@ -1,5 +1,6 @@
-growing 0.994597;
-60framerotate 0.674709;
+percenttune 0.0614034;
+growing 0.907806;
+60framerotate 0.562093;
 stretch 0.390113;
 2secrotate 0.381309;
 zoompopup 0.153015;
