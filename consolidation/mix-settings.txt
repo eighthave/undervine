@@ -1,0 +1,4 @@
+60framerotate 0.847719;
+growing 0.390113;
+30framerotate 0.809888;
+clock/ticker 0.972151;
