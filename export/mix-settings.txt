@@ -1,0 +1,2 @@
+shimmeringfields 1.5;
+clock/ticker 1.5;
