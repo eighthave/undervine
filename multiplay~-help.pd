@@ -1,0 +1,29 @@
+#N canvas 607 222 624 488 10;
+#X obj 86 219 *~;
+#X obj 198 224 *~;
+#X obj 215 82 soundfiler;
+#X obj 215 34 loadbang;
+#X obj 214 14 table testtest;
+#X obj 220 194 / 127;
+#X obj 224 172 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12700 1;
+#X msg 214 59 read -resize corkpop.wav testtest;
+#X obj 86 253 dac~;
+#X msg 86 97 0 0.5;
+#X obj 86 137 voicepoly 5 multiplay~ testtest;
+#X obj 412 223 send pd-multiplay~-help.pd;
+#X msg 409 158 obj 10 400 voicepolywrap /Users/hans/Documents/Freelance/UnderVine/scenes/multiplay~
+4 5 testtest 0 0 0;
+#X obj 10 400 voicepolywrap /Users/hans/Documents/Freelance/UnderVine/scenes/multiplay~
+4 5 testtest 0 0 0;
+#X connect 0 0 8 0;
+#X connect 1 0 8 1;
+#X connect 3 0 7 0;
+#X connect 5 0 0 1;
+#X connect 5 0 1 1;
+#X connect 6 0 5 0;
+#X connect 7 0 2 0;
+#X connect 9 0 10 0;
+#X connect 10 0 0 0;
+#X connect 10 1 1 0;
+#X connect 12 0 11 0;
