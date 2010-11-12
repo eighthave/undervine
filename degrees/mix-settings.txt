@@ -1,5 +1,6 @@
-counters 0.201232;
-shimmeringfields 0.501464;
+winningping 0.156548;
+counters 0.0807523;
+shimmeringfields 0.562093;
 30framerotate 0.562093;
 60framerotate 0.417765;
 zoompopup 0.153015;
