@@ -1,4 +1,4 @@
-#N canvas 409 22 472 401 10;
+#N canvas 381 22 472 401 10;
 #X declare -path ..;
 #X obj 337 24 pddp/dsp;
 #X obj 225 7 ../mix-settings;
@@ -368,7 +368,6 @@
 #X connect 38 0 35 0;
 #X connect 39 0 36 0;
 #X restore 53 226 pd counters;
-#X msg 59 5 2100;
 #X obj 236 235 ../tn-hsl winningping;
 #N canvas 0 22 535 358 winningping 0;
 #X obj 36 15 inlet;
@@ -382,7 +381,6 @@
 #X connect 4 0 1 1;
 #X connect 5 0 1 0;
 #X restore 44 248 pd winningping;
-#X msg 29 4 150;
 #N canvas 584 132 594 440 90framerotate 0;
 #X obj 41 24 inlet;
 #X obj 289 61 soundfiler;
@@ -416,17 +414,21 @@
 #X connect 17 0 1 0;
 #X restore 73 161 pd 90framerotate;
 #X obj 236 143 ../tn-hsl 90framerotate;
+#X msg 59 5 1100;
+#X obj 45 271 magicfade;
+#X msg 29 4 900;
+#X obj 236 258 ../tn-hsl magicfade;
 #X connect 4 0 3 0;
 #X connect 4 0 15 1;
 #X connect 5 0 3 1;
 #X connect 5 0 15 2;
 #X connect 14 0 15 0;
 #X connect 16 0 8 0;
-#X connect 16 0 28 0;
+#X connect 16 0 26 0;
 #X connect 16 0 17 0;
 #X connect 16 0 18 0;
 #X connect 16 0 20 0;
 #X connect 16 0 23 0;
 #X connect 17 0 14 0;
-#X connect 24 0 16 0;
-#X connect 27 0 16 0;
+#X connect 28 0 16 0;
+#X connect 30 0 16 0;

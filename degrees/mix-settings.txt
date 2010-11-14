@@ -1,3 +1,4 @@
+magicfade 0.513043;
 90framerotate 1.19387;
 winningping 0.156548;
 counters 0.0807523;
