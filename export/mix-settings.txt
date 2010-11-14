@@ -1,2 +1,3 @@
-shimmeringfields 1.5;
-clock/ticker 1.5;
+60framerotate 1.5;
+background 0.0672739;
+clock/ticker 0.739215;
