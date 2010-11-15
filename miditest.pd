@@ -1,0 +1,28 @@
+#N canvas 0 22 450 300 10;
+#X obj 50 84 mtof;
+#X obj 52 38 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6300 1;
+#X floatatom 50 58 5 0 0 0 - - -;
+#X floatatom 48 18 5 0 0 0 - - -;
+#X obj 58 128 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12700 1;
+#X floatatom 56 148 5 0 0 0 - - -;
+#X floatatom 54 108 5 0 0 0 - - -;
+#X floatatom 239 63 5 0 0 0 - - -;
+#X obj 247 133 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 3507 1;
+#X floatatom 245 153 5 0 0 0 - - -;
+#X floatatom 243 113 5 0 0 0 - - -;
+#X obj 239 89 ftom;
+#X obj 25 223 pddp/pddplink http://tomscarff.110mb.com/midi_analyser/midi_note_frequency.htm
+;
+#X connect 0 0 6 0;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 3 0 1 0;
+#X connect 4 0 5 0;
+#X connect 6 0 4 0;
+#X connect 7 0 11 0;
+#X connect 8 0 9 0;
+#X connect 10 0 8 0;
+#X connect 11 0 10 0;
