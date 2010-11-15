@@ -1,4 +1,5 @@
+wineflow 0.0547803;
 extendedrotate 1.14059;
-60framerotate 1.5;
+60framerotate 0.907806;
 background 0.0672739;
 clock/ticker 0.739215;
