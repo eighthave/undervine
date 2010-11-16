@@ -1,10 +1,11 @@
+magicfadetoband 0.05;
 countrywinesing 0.756283;
 60framerotate 0.356071;
 background 0.303488;
 kha 0.847719;
-magicfade 1.33821;
+magicfade 0.106198;
 90framerotate 0.994597;
-winningping 0.644599;
+winningping 0.381309;
 counters 0.05;
 shimmeringfields 1.22143;
 countrypopup 0.163861;

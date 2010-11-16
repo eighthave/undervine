@@ -1,4 +1,4 @@
-#N canvas 252 319 475 468 10;
+#N canvas 424 305 475 468 10;
 #X obj 253 86 soundfiler;
 #X obj 253 38 loadbang;
 #X obj 251 17 table magicfade 2051;
@@ -25,7 +25,7 @@
 #X obj 30 40 framesync/fsline 1053 1120;
 #X obj 96 257 framesync/fsline 1100 1120;
 #X obj 86 237 framesync/fsline 1053 1073;
-#X obj 79 379 *~ 3;
+#X obj 79 379 *~ 1;
 #X connect 1 0 3 0;
 #X connect 3 0 0 0;
 #X connect 5 0 26 0;
