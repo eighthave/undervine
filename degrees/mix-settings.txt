@@ -1,5 +1,6 @@
-khafadetoband 0.0969312;
-magicfade 0.124598;
+magiccounters 1.5;
+khafadetoband 0.113726;
+magicfade 0.236098;
 countrywinesing 0.950211;
 60framerotate 0.615832;
 background 0.408336;
