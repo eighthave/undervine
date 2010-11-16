@@ -1,10 +1,10 @@
-magicfade 0.513043;
-90framerotate 1.19387;
+background 0.149562;
+kha 0.847719;
+magicfade 1.5;
+90framerotate 0.994597;
 winningping 0.156548;
-counters 0.0807523;
-shimmeringfields 0.562093;
+counters 0.05;
+shimmeringfields 0.187913;
 30framerotate 0.562093;
-zoompopup 0.153015;
-countrypopup 0.0826168;
+countrypopup 0.0688272;
 latitudetinks 0.146187;
-clock/ticker 1.36911;
