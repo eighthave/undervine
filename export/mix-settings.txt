@@ -1,6 +1,7 @@
-winetrickles 0.05;
-wineflow 0.0586631;
+squeeze 1.04106;
+winetrickles 0.332503;
+wineflow 0.0672739;
 extendedrotate 1.14059;
 60framerotate 0.907806;
-background 0.103802;
+background 0.210632;
 clock/ticker 0.739215;
