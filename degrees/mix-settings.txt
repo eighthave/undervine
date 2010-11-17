@@ -8,5 +8,5 @@ background 0.408336;
 winningping 0.601934;
 counters 0.05;
 shimmeringfields 1.5;
-countrypopup 0.340181;
+countrypopup 0.127475;
 latitudetinks 0.196691;
