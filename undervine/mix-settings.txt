@@ -1,0 +1,12 @@
+magiccounters 1.5;
+khafadetoband 0.113726;
+magicfade 0.236098;
+countrywinesing 0.950211;
+60framerotate 0.615832;
+background 0.408336;
+90framerotate 1.30801;
+winningping 0.601934;
+counters 0.05;
+shimmeringfields 1.5;
+countrypopup 0.127475;
+latitudetinks 0.196691;
