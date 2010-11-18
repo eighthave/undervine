@@ -1,9 +1,10 @@
-datepop 1.5;
+magicfadebacking 0.179527;
+datepop 1.14059;
 wineflow 0.0672739;
 clock/ticker 0.756283;
 magiccounters 1.5;
 khafadetoband 0.113726;
-magicfade 0.236098;
+magicfade 0.310495;
 countrywinesing 0.950211;
 60framerotate 0.615832;
 background 0.408336;

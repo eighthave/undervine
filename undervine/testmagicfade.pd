@@ -1,4 +1,4 @@
-#N canvas 1017 428 486 405 10;
+#N canvas 1117 433 486 405 10;
 #X obj 176 146 trigger anything bang;
 #X msg 176 121 start;
 #X msg 139 120 stop;
@@ -9,7 +9,11 @@
 #X msg 208 242 open /tmp/magicfade.wav;
 #X obj 84 189 tabosc4~ magicfade;
 #X obj 84 170 mtof;
-#X msg 85 121 15;
+#X obj 61 299 dac~;
+#X obj 29 144 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5500 1;
+#X floatatom 31 166 5 0 0 0 - - -;
+#X obj 61 275 *~ 0.01;
 #X connect 0 0 5 0;
 #X connect 0 1 6 0;
 #X connect 1 0 0 0;
@@ -19,5 +23,8 @@
 #X connect 4 0 3 0;
 #X connect 6 0 5 0;
 #X connect 7 0 5 0;
+#X connect 7 0 12 0;
 #X connect 8 0 7 0;
-#X connect 9 0 8 0;
+#X connect 10 0 8 0;
+#X connect 10 0 11 0;
+#X connect 12 0 9 0;
