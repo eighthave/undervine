@@ -1,4 +1,4 @@
-#N canvas 495 22 472 700 10;
+#N canvas 454 22 472 700 10;
 #X declare -path ..;
 #X obj 337 24 pddp/dsp;
 #X obj 225 7 ../mix-settings;
@@ -199,7 +199,7 @@
 #X connect 16 0 3 0;
 #X connect 17 0 9 0;
 #X connect 18 0 3 0;
-#X restore 117 197 pd countrywinesing;
+#X restore 119 197 pd countrywinesing;
 #N canvas 323 285 450 300 shimmeringfields 0;
 #X obj 26 5 inlet;
 #X obj 130 242 *~;
@@ -227,7 +227,7 @@
 #X connect 11 0 7 0;
 #X connect 12 0 13 0;
 #X connect 13 0 7 0;
-#X restore 112 218 pd shimmeringfields;
+#X restore 116 217 pd shimmeringfields;
 #X obj 236 212 ../tn-hsl shimmeringfields;
 #X obj 236 235 ../tn-hsl counters;
 #X obj 236 74 ../tn-hsl winningping;
@@ -434,7 +434,7 @@
 #X connect 56 0 11 0;
 #X connect 57 0 16 0;
 #X connect 58 0 27 0;
-#X restore 94 282 pd all counters;
+#X restore 103 278 pd all counters;
 #N canvas 27 136 1152 629 oldworld 0;
 #X obj 46 10 inlet;
 #N canvas 380 576 505 307 load 0;
@@ -563,7 +563,7 @@
 #X connect 48 0 7 0;
 #X connect 49 0 11 0;
 #X connect 50 0 30 0;
-#X restore 98 260 pd oldworld counters;
+#X restore 107 259 pd oldworld counters;
 #N canvas 333 358 594 330 60framerotate 0;
 #X obj 41 24 inlet;
 #X obj 299 101 soundfiler;
@@ -584,7 +584,7 @@
 #X connect 8 0 5 1;
 #X connect 9 0 5 0;
 #X connect 10 0 5 0;
-#X restore 104 239 pd 60framerotate;
+#X restore 113 238 pd 60framerotate;
 #X obj 236 189 ../tn-hsl 60framerotate;
 #X obj 236 166 ../tn-hsl countrywinesing;
 #X obj 10 25 framesync/frameclock 8409;
@@ -599,7 +599,7 @@
 #X obj 135 123 cyclone/prepend send;
 #X obj 135 47 - 30;
 #X obj 135 95 % 8410;
-#X obj 135 75 % 8410;
+#X obj 135 75 + 8410;
 #X connect 0 0 5 0;
 #X connect 2 0 1 0;
 #X connect 3 0 2 0;
@@ -641,7 +641,7 @@
 #X connect 12 0 4 0;
 #X connect 13 0 2 0;
 #X connect 14 0 3 1;
-#X restore 70 381 pd khawineband;
+#X restore 81 377 pd khawineband;
 #N canvas 67 273 584 500 khafadetoband 0;
 #X obj 37 17 inlet;
 #X obj 182 383 *~;
@@ -699,7 +699,7 @@
 #X connect 29 0 3 0;
 #X connect 30 0 5 0;
 #X connect 31 0 1 1;
-#X restore 76 361 pd khafadetoband;
+#X restore 87 357 pd khafadetoband;
 #N canvas 76 422 1009 405 magicfade 0;
 #X obj 37 17 inlet;
 #X obj 375 287 *~;
@@ -816,7 +816,7 @@
 #X connect 53 0 1 0;
 #X connect 55 0 48 0;
 #X connect 56 0 48 0;
-#X restore 87 301 pd magicfade;
+#X restore 98 297 pd magicfade;
 #N canvas 0 22 409 276 magiccounters 0;
 #X obj 26 11 inlet;
 #X obj 55 224 throw~ left;
@@ -842,10 +842,10 @@
 #X connect 9 0 11 1;
 #X connect 10 0 1 0;
 #X connect 11 0 6 0;
-#X restore 81 342 pd magiccounters;
+#X restore 92 338 pd magiccounters;
 #X obj 236 304 ../tn-hsl magiccounters;
 #X obj 236 350 ../tn-hsl clock/ticker;
-#X obj 64 401 clock/ticker 4417 4450 3;
+#X obj 75 397 clock/ticker 4417 4450 3;
 #X obj 236 373 ../tn-hsl wineflow;
 #N canvas 0 22 643 422 wineflow 0;
 #X obj 28 15 inlet;
@@ -866,7 +866,7 @@
 #X connect 5 0 1 0;
 #X connect 8 0 10 0;
 #X connect 10 0 9 0;
-#X restore 54 441 pd wineflow;
+#X restore 65 437 pd wineflow;
 #X msg 108 5 4000;
 #N canvas 0 22 573 480 datepop 0;
 #X obj 22 7 inlet;
@@ -908,9 +908,9 @@
 #X connect 20 0 1 0;
 #X connect 21 0 1 0;
 #X connect 24 0 14 0;
-#X restore 48 461 pd datepop;
+#X restore 59 457 pd datepop;
 #X obj 236 396 ../tn-hsl datepop;
-#X obj 59 421 clock/ticker 4600 7670 153;
+#X obj 70 417 clock/ticker 4600 7670 153;
 #N canvas 0 22 585 431 magicfadebacking 0;
 #X obj 22 7 inlet;
 #X obj 22 375 throw~ left;
@@ -940,7 +940,7 @@
 #X connect 12 0 13 0;
 #X connect 13 0 3 0;
 #X connect 14 0 4 0;
-#X restore 84 320 pd magicfadebacking;
+#X restore 95 316 pd magicfadebacking;
 #X obj 236 281 ../tn-hsl magicfadebacking;
 #X connect 4 0 3 0;
 #X connect 4 0 12 1;
