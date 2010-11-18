@@ -19,6 +19,7 @@
 #X msg 250 197 reset \, dimen 1280 720 \, offset -1280 -380 \, create
 \, 1;
 #X msg 22 83 open undervine.mov;
+#X obj 250 172 loadbang;
 #X connect 1 0 2 0;
 #X connect 2 0 12 0;
 #X connect 3 0 1 1;
@@ -34,3 +35,4 @@
 #X connect 15 0 17 0;
 #X connect 16 0 7 0;
 #X connect 17 0 1 0;
+#X connect 18 0 16 0;
