@@ -60,7 +60,7 @@
 #X connect 17 0 15 0;
 #X connect 18 0 9 0;
 #X restore 45 307 pd sweep;
-#X obj 132 107 counternode-bin~ 12;
+#X obj 132 107 counternode-bin~ 2;
 #X obj 45 348 *~;
 #X obj 60 328 receive fillsweep;
 #X connect 0 0 15 0;

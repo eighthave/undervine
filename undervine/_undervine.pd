@@ -1110,7 +1110,6 @@
 #X restore 41 536 pd waterfalls;
 #X msg 142 5 6500;
 #X msg 39 5 2100;
-#X msg 9 4 990;
 #X obj 236 258 ../tn-hsl fillsweep;
 #N canvas 421 330 842 476 percentcounters 0;
 #X obj 28 15 inlet;
@@ -1186,6 +1185,7 @@
 #X obj 75 397 clock/ticker 4296 4420 12;
 #X msg 108 5 5000;
 #X msg 72 5 4400;
+#X msg 9 4 333;
 #X connect 4 0 3 0;
 #X connect 4 0 12 1;
 #X connect 5 0 3 1;
@@ -1206,7 +1206,7 @@
 #X connect 29 0 34 0;
 #X connect 29 0 35 0;
 #X connect 29 0 37 0;
-#X connect 29 0 57 0;
+#X connect 29 0 56 0;
 #X connect 29 0 40 0;
 #X connect 29 0 42 0;
 #X connect 29 0 43 0;
@@ -1214,10 +1214,10 @@
 #X connect 29 0 47 0;
 #X connect 29 0 50 0;
 #X connect 29 0 52 0;
-#X connect 29 0 59 0;
+#X connect 29 0 58 0;
 #X connect 30 0 11 0;
 #X connect 53 0 29 0;
 #X connect 54 0 29 0;
-#X connect 55 0 29 0;
+#X connect 59 0 29 0;
 #X connect 60 0 29 0;
 #X connect 61 0 29 0;
