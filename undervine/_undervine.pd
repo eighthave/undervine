@@ -113,7 +113,7 @@
 #X connect 20 0 13 0;
 #X restore 128 156 pd countrypopup;
 #X obj 236 120 ../tn-hsl countrypopup;
-#X obj 14 656 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 14 656 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #N canvas 0 22 445 336 record 0;
 #X obj 127 21 inlet;
@@ -149,7 +149,7 @@
 #X connect 8 0 9 0;
 #X connect 9 0 6 0;
 #X restore 302 158 pd generate filename;
-#X obj 129 60 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 129 60 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 309 137 bang;
 #X obj 165 208 inlet~;
@@ -524,22 +524,28 @@
 #X obj 236 189 ../tn-hsl 60framerotate;
 #X obj 236 166 ../tn-hsl countrywinesing;
 #X obj 236 281 ../tn-hsl magicfade;
-#N canvas 0 22 450 300 sendframestovideo 0;
+#N canvas 317 74 450 300 sendframestovideo 0;
 #X obj 135 23 receive framesync/frameclock;
-#X obj 135 183 netsend 1;
-#X msg 152 163 connect localhost 33333;
-#X obj 152 143 loadbang;
+#X obj 135 233 netsend 1;
+#X msg 182 203 connect localhost 33333;
+#X obj 182 183 loadbang;
 #X obj 135 123 cyclone/prepend send;
 #X obj 135 47 - 30;
 #X obj 135 95 % 8410;
 #X obj 135 75 + 8410;
+#X obj 135 161 spigot;
+#X obj 135 254 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
 #X connect 0 0 5 0;
+#X connect 1 0 8 1;
+#X connect 1 0 9 0;
 #X connect 2 0 1 0;
 #X connect 3 0 2 0;
-#X connect 4 0 1 0;
+#X connect 4 0 8 0;
 #X connect 5 0 7 0;
 #X connect 6 0 4 0;
 #X connect 7 0 6 0;
+#X connect 8 0 1 0;
 #X restore 284 675 pd sendframestovideo;
 #X obj 236 350 ../tn-hsl khafadetoband;
 #N canvas 630 381 418 431 khawineband 0;
